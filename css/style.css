@@ -15,7 +15,7 @@
    HTML5 display definitions
    ========================================================================== */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { /*display: block;*/ }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
 [hidden] { display: none; }
@@ -51,7 +51,7 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
    ========================================================================== */
 
 a { color: #00e; }
-a:visited { color: #551a8b; }
+/*a:visited { color: #551a8b; }*/
 a:hover { color: #06e; }
 a:focus { outline: thin dotted; }
 
@@ -218,14 +218,66 @@ td { vertical-align: top; }
    Author: Felipe
    ========================================================================== */
 
+body{ background-color:#7f7f7f;}
+header{
+  background-image: url("../img/fondo_header.jpg");
+  margin-top: 10px;
+  border-top: 1px solid #fff;
+  padding-bottom: 0px;
+}
+#contenedor_header{
+  width: 70%;
+  margin: 0px auto;
+}
 
+#contenedor_header img{
+  margin: 20px 10px;
+}
+nav{
+  float: right;
+  font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
 
+nav ul li{
+  display: inline-block;
+  float: left;
+}
 
+nav ul li a{
+  color: white;
+  display: block;
+  height: 70px;
+  padding: 45px 12px 0px 12px;
+  margin: 0px 0px;
+  text-align: center;
+  text-decoration:none;
+}
 
+nav ul li a:hover, .selected{
+  background-image: url("../img/mouse-over.png");
+  background-position: top;
+  background-repeat: repeat-x;
+  color: white;
+}
 
+#transparente_head{
+        -webkit-border-radius: 10px 10px 0px 0px;
+        border-radius: 10px 10px 0px 0px;
+        background-color: rgba(255, 255, 255, .5);
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        border-top: 1px solid #fff;
+        height: 225px;
+        padding: 20px 50px 10px 50px;
+}
 
-
-
+#transparente_head h1{
+  font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 28px;
+}
 
 
 
