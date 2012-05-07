@@ -390,6 +390,41 @@ footer{
   width: 100%;
 }
 
+#menu_footer{
+  margin: 30px auto;
+  text-align: center;
+  width: 500px;
+}
+
+#menu_footer ul li{
+  
+  display: inline-block;
+  margin: 0px 7px;
+}
+
+#menu_footer ul{
+  padding-left: 0px;
+}
+
+#menu_footer ul li a{
+  color: #666;
+  font-size: 13px;
+  padding: 0px 5px;
+  text-decoration: none;
+}
+
+footer span{
+  color: #909090;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 0px 7px;
+  text-align: center;
+  width: 500px;
+}
+
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
    This example overrides the primary ('mobile first') styles
