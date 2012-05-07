@@ -14,12 +14,12 @@
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */
-
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { /*display: block;*/ }
+/*
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block;}
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
 [hidden] { display: none; }
-
+*/
 
 /* =============================================================================
    Base
@@ -224,6 +224,7 @@ header{
   margin-top: 10px;
   border-top: 1px solid #fff;
   padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 #contenedor_header{
   width: 70%;
@@ -262,14 +263,21 @@ nav ul li a:hover, .selected{
 }
 
 #transparente_head{
+        background-color: rgba(255, 255, 255, .5);
         -webkit-border-radius: 10px 10px 0px 0px;
         border-radius: 10px 10px 0px 0px;
-        background-color: rgba(255, 255, 255, .5);
         border-left: 1px solid #fff;
         border-right: 1px solid #fff;
         border-top: 1px solid #fff;
-        height: 225px;
-        padding: 20px 50px 10px 50px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        /*height: 150px;*/
+        height: 20%;
+        margin-top: 20px;
+        padding: 30px 50px 10px 50px;
+        width: 100%;
 }
 
 #transparente_head h1{
@@ -279,7 +287,26 @@ nav ul li a:hover, .selected{
   margin-bottom: 28px;
 }
 
+#centro{
+  background-color: #d1d1d1;
+  font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  width: 100%;
+}
 
+#transparente_centro{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, .5);
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  clear: both;
+  height: 100%;
+  margin: 0px auto;
+  padding: 5px 50px;
+  width: 70%;
+}
 
 
 
